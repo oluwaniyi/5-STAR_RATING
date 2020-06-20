@@ -1,20 +1,20 @@
 # STAR_RATING
 To easily create star-rating ranging from 0.00 to 5.00 with just a single line command. 
-/* Documentation
-				create_star_rating(full_color, empty_color, rating, star_id, background_color)
-				The create_star_rating function requires:
-				full_color        :  The color for full star rating
-				empty_color       :  The color for empty star rating
-				rating            :  The rating which ranges from 0.00 - 5.00
-				star_id           :  The "id" of the element where rating will be inserted 
-				background_color  :  The background_color of the star which preferrably should match that of the parent element.
-			*/
 
-			/*example*/
-			create_star_rating('#a0c8ff', '#ffffff', 5.00, 'html-rate', "#383737");
-			create_star_rating('#a0c8ff', '#ffffff', 2.30, 'css-rate', "#383737");
-			create_star_rating('#a0c8ff', '#ffffff', 3.60, 'php-rate', "#383737");
-			create_star_rating('#a0c8ff', '#ffffff', 4.80, 'javascript-rate', "#383737");
+create_star_rating(full_color, empty_color, rating, star_id, background_color)
+The create_star_rating function requires:
+full_color        :  The color for full star rating
+empty_color       :  The color for empty star rating
+rating            :  The rating which ranges from 0.00 - 5.00
+star_id           :  The "id" of the element where rating will be inserted 
+background_color  :  The background_color of the star which preferrably should match that of the parent element.
+
+
+	/*example*/
+	create_star_rating('#a0c8ff', '#ffffff', 5.00, 'html-rate', "#383737");
+	create_star_rating('#a0c8ff', '#ffffff', 2.30, 'css-rate', "#383737");
+	create_star_rating('#a0c8ff', '#ffffff', 3.60, 'php-rate', "#383737");
+	create_star_rating('#a0c8ff', '#ffffff', 4.80, 'javascript-rate', "#383737");
 
 			/*The function that creates the star_rating*/
 			function create_star_rating(full_color, empty_color, rating, star_id, background_color){
